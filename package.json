@@ -1,0 +1,41 @@
+{
+  "name": "unify-exports",
+  "version": "1.1.1",
+  "description": "A simple, type-safe utility to stop JavaScript/TypeScript from crying about default and named exports. Unifies them into a single, clean object.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest && jest",
+    "test:jest": "jest",
+    "test:vitest": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "import",
+    "export",
+    "default",
+    "named",
+    "module",
+    "typescript",
+    "utility",
+    "commonjs",
+    "esm"
+  ],
+  "author": "OkayGift <admin@realmmaid.com> (https://github.com/RealmMaid), (https://realmmaid.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
